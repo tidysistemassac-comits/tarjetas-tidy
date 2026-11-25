@@ -94,7 +94,7 @@ var v=["BEGIN:VCARD","VERSION:3.0","N:Moreno Vargas;Dennis;;;","FN:Dennis Moreno
 var b=new Blob([v],{type:"text/vcard;charset=utf-8"}),u=URL.createObjectURL(b),a=document.createElement("a");
 a.href=u;a.download="Dennis-Moreno-TIDY.vcf";document.body.appendChild(a);a.click();
 setTimeout(function(){URL.revokeObjectURL(u);a.remove()},1500)});
-var qm=document.getElementById("qm"),L="https://claude.ai/artifact/M52PDhxbNKGnY75Ka7Qrz1";
+var qm=document.getElementById("qm"),L="https://tidysistemassac-comits.github.io/tarjetas-tidy/dennis/";
 document.getElementById("qrb").onclick=function(){qm.hidden=false};
 document.getElementById("qcl").onclick=function(){qm.hidden=true};
 qm.onclick=function(e){if(e.target===qm)qm.hidden=true};
